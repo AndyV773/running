@@ -1,3 +1,6 @@
+/* imported google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+
 /* asterisk wildcard selector to override default browser styles */
 * {
     box-sizing: border-box;
@@ -12,6 +15,7 @@ body {
     flex-direction: column;
     /* generic project styles */
     color: #3a3a3a;
+    font-family: "Lato", sans-serif;
 }
 
 /* header */
@@ -29,4 +33,28 @@ main {
 /* footer */
 footer {
     background-color: orange;
+}
+
+/* google font classes */
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+.oswald-text {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.great-vibes {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.big-text {
+    font-size: 50px;
 }
