@@ -138,8 +138,15 @@ footer {
         display: none;
     }
 
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
     /* main */
+    /* push main content down to accommodate larger header */
     main {
-        margin-top: 60px;
+        margin-top: 79px;
     }
   }
