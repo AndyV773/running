@@ -93,7 +93,7 @@ main {
 
 /* hero section */
 #hero {
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    background: url("../images/hero-image.webp") no-repeat center center / cover;
     height: 600px;
     width: 100%;
     background-color: lightgreen;
@@ -136,7 +136,8 @@ main {
     padding: 0 20px;
 }
 
-#benefits-physical > div, #benefits-mental > div {
+#benefits-physical > div,
+#benefits-mental > div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -144,6 +145,24 @@ main {
 hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+/* reasons image */
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat center center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    /* makes square image in to circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* footer */
