@@ -18,7 +18,9 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -53,7 +55,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -115,7 +117,8 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #fff;
 }
 
@@ -139,8 +142,8 @@ main {
     padding: 0 20px;
 }
 
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -224,8 +227,8 @@ hr {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
+}
+
 .oswald-text {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -237,10 +240,20 @@ hr {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  /* media query: tablets and larger (768px and up) */
-  @media screen and (min-width: 768px) {
+}
+
+/* media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    /* gallery page */
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
     /* header */
     nav {
         display: block;
@@ -254,7 +267,7 @@ hr {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -288,34 +301,46 @@ hr {
         width: 100%;
     }
 
-    #benefits-physical > div,
-    #benefits-mental > div {
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
-  }
-   
-  /* large devices (laptops and desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
+
+    /* gallery page */
+    #photos {
+        column-count: 3;
+    }
+}
+
+/* large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
     /* navbar hover indication*/
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-  }
 
-  /* large devices (laptops and desktops, 1200px and up) */
-  @media screen and (min-width: 1200px) {
+    /* gallery page */
+    #photos {
+        column-count: 4;
+    }
+}
+
+/* large devices (laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
     /* reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -327,11 +352,11 @@ hr {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
-  }
+}
