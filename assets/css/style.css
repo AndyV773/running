@@ -90,7 +90,6 @@ nav {
 
 /* main content */
 main {
-
     /* make main element take up any surplus space to push down footer */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -205,6 +204,55 @@ hr {
 
 #photos {
     line-height: 0;
+}
+
+/* signup page */
+#signup-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup {
+    background: url("../images/signup-image.webp") no-repeat 75% 75% / cover;
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px 10px;
+}
+
+#signup h2 {
+    color: #fafafa;
+    padding-bottom: 20px;
+}
+
+#signup-form {
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+.text-input {
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    height: 25px;
+    padding: 0 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    background-color: #454b1b;
+    color: #fafafa;
+    border-radius: 2px;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
 }
 
 /* footer */
